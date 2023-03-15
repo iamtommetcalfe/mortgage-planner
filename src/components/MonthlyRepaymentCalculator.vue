@@ -54,7 +54,7 @@ export default {
       yearsToRepay: 25,
       monthlyPayment: null,
       totalPayment: null,
-      currency: 'GBP',
+      currency: process.env.VUE_APP_DEFAULT_CURRENCY,
       years: []
     }
   },
