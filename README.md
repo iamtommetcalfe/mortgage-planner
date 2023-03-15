@@ -5,6 +5,9 @@
 npm install
 ```
 
+Create .env file and populate with the following variables. Replace the values as you need to:
+* VUE_APP_DEFAULT_CURRENCY = GBP
+
 ### Compiles and hot-reloads for development
 ```
 npm run serve
