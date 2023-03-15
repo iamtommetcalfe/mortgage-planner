@@ -66,13 +66,6 @@ export default {
         'EUR': '€'
       }[this.currency];
     },
-    interest() {
-      return {
-        'GBP': '£',
-        'USD': '$',
-        'EUR': '€'
-      }[this.interestRate];
-    }
   },
   methods: {
     calculatePayments() {

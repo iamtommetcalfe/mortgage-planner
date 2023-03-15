@@ -1,8 +1,8 @@
 <template>
 
   <div>
-    <header id="headerContainer">
-      <Header/>
+    <header id="headerContainer" class="text-center shadow-sm p-4 mb-3">
+      <MortgagePlannerLogo />
     </header>
     <section id="mainContent">
       <div id="mainContentWrapper">
@@ -18,11 +18,13 @@
 </template>
 
 <script>
-import MonthlyRepaymentCalculator from './components/MonthlyRepaymentCalculator.vue'
+import MonthlyRepaymentCalculator from '@/components/MonthlyRepaymentCalculator.vue'
+import MortgagePlannerLogo from "@/components/layout/MortgagePlannerLogo.vue";
 
 export default {
   name: 'App',
   components: {
+    MortgagePlannerLogo,
     MonthlyRepaymentCalculator
   }
 }
