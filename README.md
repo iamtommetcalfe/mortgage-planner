@@ -31,6 +31,9 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ## Components
 
+### Average Mortgage Rate Graph
+This uses the Bank of England to download a CSV of rates. The specific rate used for this graph is the monthly interest rate of UK monetary financial institutions (excl. Central Bank) sterling 5 year (90% LTV) fixed rate mortgage to households (in percent) not seasonally adjusted.
+
 ### Monthly Repayment Calculator
 To calculate the monthly mortgage payment based on the interest rate, loan amount, and number of years to repay the loan, you can use the following formula:
 
