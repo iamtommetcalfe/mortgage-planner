@@ -1,5 +1,8 @@
 # Mortgage Planner
 
+![Landing page of Mortgage Planner (Landing page of Mortgage Planner)](src/assets/images/example.png)
+
+
 ## Project setup
 ```
 npm install

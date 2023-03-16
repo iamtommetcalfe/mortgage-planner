@@ -32,7 +32,7 @@
         </select>
       </div>
 
-      <button class="bg-blue-500 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded" type="submit">Calculate</button>
+      <button class="bg-teal-600 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded w-full" type="submit">Calculate</button>
     </form>
 
     <div class="mt-4">

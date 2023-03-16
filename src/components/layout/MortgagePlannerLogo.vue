@@ -6,8 +6,3 @@
   </span>
   </div>
 </template>
-<style>
-#logo {
-
-}
-</style>
