@@ -41,9 +41,7 @@ export default {
   },
   methods: {
     async fetchData() {
-      const url = 'http://www.bankofengland.co.uk/boeapps/iadb/fromshowcolumns.asp?csv.x=yes&DateFrom=01/Jan/2020&DateTo=15/Mar/2023&SeriesCodes=IUMZO28&CSVF=TN&UsingCodes=Y&VPD=Y&VFD=N';
-      const proxy = 'https://cors-anywhere.herokuapp.com/';
-      const { data } = await axios.get(proxy + url, { responseType: 'text' });
+      const { data } = await axios.get('/api/boeapps/iadb/fromshowcolumns.asp?csv.x=yes&DateFrom=01/Jan/2020&DateTo=15/Mar/2023&SeriesCodes=IUMZO28&CSVF=TN&UsingCodes=Y&VPD=Y&VFD=N', { responseType: 'text' });
       return Papa.parse(data, { header: true }).data;
     },
     processData(data) {

@@ -34,9 +34,3 @@ export default {
   }
 }
 </script>
-
-<style>
-#repaymentCalculatorContainer form {
-  /*width:350px;*/
-}
-</style>
