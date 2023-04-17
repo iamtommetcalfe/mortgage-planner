@@ -41,7 +41,7 @@ export default {
   },
   methods: {
     async fetchData() {
-      const { data } = await axios.get('/api/boeapps/iadb/fromshowcolumns.asp?csv.x=yes&DateFrom=01/Jan/2020&DateTo=15/Mar/2023&SeriesCodes=IUMZO28&CSVF=TN&UsingCodes=Y&VPD=Y&VFD=N', { responseType: 'text' });
+      const { data } = await axios.get('/api/boeapps/iadb/fromshowcolumns.asp?csv.x=yes&DateFrom=01/Jan/2020&DateTo=' + this.getCurrentDate() + '&SeriesCodes=IUMZO28&CSVF=TN&UsingCodes=Y&VPD=Y&VFD=N', { responseType: 'text' });
       return Papa.parse(data, { header: true }).data;
     },
     processData(data) {
@@ -75,6 +75,14 @@ export default {
           maintainAspectRatio: true
         }
       });
+    },
+    getCurrentDate() {
+        const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+        const currentDate = new Date();
+        const day = currentDate.getDate();
+        const month = months[currentDate.getMonth()];
+        const year = currentDate.getFullYear();
+        return `${day}/${month}/${year}`;
     }
   }
 }
